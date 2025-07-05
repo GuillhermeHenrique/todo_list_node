@@ -1,0 +1,150 @@
+* {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #141414;
+}
+
+h1 {
+  text-align: center;
+}
+
+#navbar {
+  padding: 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 6px #d1d1d19d;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li {
+  margin-left: 1.5em;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #141414;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  margin: 2em auto;
+}
+
+.form-container {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.container form {
+  margin-top: 1.5em;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.form-control input,
+.form-control textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background-color: #141414;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list {
+  padding: 0 60px;
+  margin: 1.5rem auto;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+}
+
+.task-list .task {
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  justify-content: space-between;
+  break-inside: avoid;
+  transition: 0.5s;
+}
+
+.task-list .task:hover {
+  background-color: #f8f8f8;
+}
+
+.done {
+  opacity: 0.2;
+}
+
+.task-list .task .title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #141414;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.task-list .task .title:hover {
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: end;
+}
+
+.actions i {
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+  color: #141414;
+  transition: 0.3s;
+}
+
+.actions i:hover {
+  opacity: 0.7;
+}
+
+.actions form {
+  margin: 0;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
